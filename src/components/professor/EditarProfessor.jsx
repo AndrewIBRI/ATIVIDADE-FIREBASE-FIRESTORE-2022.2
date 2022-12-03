@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom"
 import FirebaseContext from '../../utils/FirebaseContext'
 import TeacherService from "../../services/TeacherService"
 
-const EditTeacherPage = () => {
+const PaginaEditarProfessor = () => {
     return (
         <FirebaseContext.Consumer>
             {value => <EditTeacher firebase={value} />}
@@ -106,4 +106,4 @@ const EditTeacher = (props)=> {
     )
 }
 
-export default EditTeacherPage
+export default PaginaEditarProfessor

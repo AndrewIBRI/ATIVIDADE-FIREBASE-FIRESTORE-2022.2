@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import FirebaseContext from '../../utils/FirebaseContext'
 import TeacherService from "../../services/TeacherService"
 
-const ListTeacherPage = () => {
+const PaginaListarProfessor = () => {
     return (
         <FirebaseContext.Consumer>
             {value => <ListTeacher firebase={value} />}
@@ -107,4 +107,4 @@ const ListTeacher = (props) => {
     )
 }
 
-export default ListTeacherPage
+export default PaginaListarProfessor
